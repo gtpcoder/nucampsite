@@ -1,38 +1,35 @@
-.App {
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+.card-title {
+  font: 500 1.25rem "Lobster", cursive;
+} 
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #3046C5;
+}
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron h2 {
+  color: #CEC8FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-dark {
+  background-color: #901CAD;
 }
