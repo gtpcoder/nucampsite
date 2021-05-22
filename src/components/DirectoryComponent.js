@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Link } from 'react-router-dom';
     
 class Directory extends Component {
 
@@ -9,10 +10,12 @@ class Directory extends Component {
         return(
             <div key={campsite.id} className="col-md-5 m1">
                 <Card>
-                    <CardImg src={campsite.image} alt={campsite.name} />
-                    <CardImgOverlay>
-                        <CardTitle>{campsite.name}</CardTitle>
-                    </CardImgOverlay>
+                    <Link to={`/directory/${campsite.id}`}>
+                        <CardImg src={campsite.image} alt={campsite.name} />
+                        <CardImgOverlay>
+                            <CardTitle>{campsite.name}</CardTitle>
+                        </CardImgOverlay>
+                    </Link>
                 </Card>
             </div>
         );

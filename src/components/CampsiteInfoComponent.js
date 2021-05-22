@@ -62,7 +62,7 @@ class CampsiteInfo extends Component {
                 <div className="container">
                     <div className="row">
                         {this.renderCampsite(this.props.campsite)}
-                        {this.renderComments(this.props.campsite.comments)}
+                        {this.renderComments(this.props.comments)}
                     </div>
                 </div>
             );
